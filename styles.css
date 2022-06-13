@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Jost', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+}
+
+header {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  padding: 0.6rem;
+  background-color: #25f2ff;
+  color: black;
+  text-align: center;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 70rem;
+  margin: auto;
+  border-color: white;
+  border-radius: 10px;
+}
+
+section {
+  width: 90%;
+  max-width: 40rem;
+  margin: auto;
+}
+
+.healthbar {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #575757;
+  border-radius: 10px;
+  margin: 1rem 0;
+  background: black;
+  border-color: white;
+}
+
+.healthbar__value {
+  background-color: #ffec19;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  text-align: center;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.26);
+  border-radius: 12px;
+  color: #ffec19;
+  border-color: white;
+  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Poppins', sans-serif;
+}
+
+#monster h2,
+#player h2 {
+  margin: 0.25rem;
+  color: #ffec19;
+}
+
+#controls {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  font: inherit;
+  border: 1px solid #25f2ff;
+  background-color: #000;
+  color: #25f2ff;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  margin: 1rem;
+  width: 12rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover,
+button:active {
+  background-color: #25f2ff;
+  border-color: #25f2ff;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.26);
+  color: white;
+}
+
+button:disabled {
+  background-color: white;
+  border-color: #7700ff;
+  box-shadow: none;
+  color: #7700ff;
+  cursor: not-allowed;
+}
+
+#log ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#log li {
+  margin: 0.5rem 0;
+}
+
+.log--player {
+  color: #7700ff;
+}
+
+.log--monster {
+  color: #da8d00;
+}
+
+.log--damage {
+  color: red;
+}
+
+.log--heal {
+  color: green;
+}
